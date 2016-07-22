@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `CXCursorKind` enum in crate `clang_sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, CXCursorKind">
+
+    <title>clang_sys::CXCursorKind - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>clang_sys</a></p><script>window.sidebarCurrent = {name: 'CXCursorKind', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content enum">
+<h1 class='fqn'><span class='in-band'>Enum <a href='index.html'>clang_sys</a>::<wbr><a class='enum' href=''>CXCursorKind</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-655' class='srclink' href='../src/clang_sys/lib.rs.html#157-393' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'>pub enum CXCursorKind {
+    UnexposedDecl,
+    StructDecl,
+    UnionDecl,
+    ClassDecl,
+    EnumDecl,
+    FieldDecl,
+    EnumConstantDecl,
+    FunctionDecl,
+    VarDecl,
+    ParmDecl,
+    ObjCInterfaceDecl,
+    ObjCCategoryDecl,
+    ObjCProtocolDecl,
+    ObjCPropertyDecl,
+    ObjCIvarDecl,
+    ObjCInstanceMethodDecl,
+    ObjCClassMethodDecl,
+    ObjCImplementationDecl,
+    ObjCCategoryImplDecl,
+    TypedefDecl,
+    CXXMethod,
+    Namespace,
+    LinkageSpec,
+    Constructor,
+    Destructor,
+    ConversionFunction,
+    TemplateTypeParameter,
+    NonTypeTemplateParameter,
+    TemplateTemplateParameter,
+    FunctionTemplate,
+    ClassTemplate,
+    ClassTemplatePartialSpecialization,
+    NamespaceAlias,
+    UsingDirective,
+    UsingDeclaration,
+    TypeAliasDecl,
+    ObjCSynthesizeDecl,
+    ObjCDynamicDecl,
+    CXXAccessSpecifier,
+    ObjCSuperClassRef,
+    ObjCProtocolRef,
+    ObjCClassRef,
+    TypeRef,
+    CXXBaseSpecifier,
+    TemplateRef,
+    NamespaceRef,
+    MemberRef,
+    LabelRef,
+    OverloadedDeclRef,
+    VariableRef,
+    InvalidFile,
+    NoDeclFound,
+    NotImplemented,
+    InvalidCode,
+    UnexposedExpr,
+    DeclRefExpr,
+    MemberRefExpr,
+    CallExpr,
+    ObjCMessageExpr,
+    BlockExpr,
+    IntegerLiteral,
+    FloatingLiteral,
+    ImaginaryLiteral,
+    StringLiteral,
+    CharacterLiteral,
+    ParenExpr,
+    UnaryOperator,
+    ArraySubscriptExpr,
+    BinaryOperator,
+    CompoundAssignOperator,
+    ConditionalOperator,
+    CStyleCastExpr,
+    CompoundLiteralExpr,
+    InitListExpr,
+    AddrLabelExpr,
+    StmtExpr,
+    GenericSelectionExpr,
+    GNUNullExpr,
+    CXXStaticCastExpr,
+    CXXDynamicCastExpr,
+    CXXReinterpretCastExpr,
+    CXXConstCastExpr,
+    CXXFunctionalCastExpr,
+    CXXTypeidExpr,
+    CXXBoolLiteralExpr,
+    CXXNullPtrLiteralExpr,
+    CXXThisExpr,
+    CXXThrowExpr,
+    CXXNewExpr,
+    CXXDeleteExpr,
+    UnaryExpr,
+    ObjCStringLiteral,
+    ObjCEncodeExpr,
+    ObjCSelectorExpr,
+    ObjCProtocolExpr,
+    ObjCBridgedCastExpr,
+    PackExpansionExpr,
+    SizeOfPackExpr,
+    LambdaExpr,
+    ObjCBoolLiteralExpr,
+    ObjCSelfExpr,
+    UnexposedStmt,
+    LabelStmt,
+    CompoundStmt,
+    CaseStmt,
+    DefaultStmt,
+    IfStmt,
+    SwitchStmt,
+    WhileStmt,
+    DoStmt,
+    ForStmt,
+    GotoStmt,
+    IndirectGotoStmt,
+    ContinueStmt,
+    BreakStmt,
+    ReturnStmt,
+    AsmStmt,
+    ObjCAtTryStmt,
+    ObjCAtCatchStmt,
+    ObjCAtFinallyStmt,
+    ObjCAtThrowStmt,
+    ObjCAtSynchronizedStmt,
+    ObjCAutoreleasePoolStmt,
+    ObjCForCollectionStmt,
+    CXXCatchStmt,
+    CXXTryStmt,
+    CXXForRangeStmt,
+    SEHTryStmt,
+    SEHExceptStmt,
+    SEHFinallyStmt,
+    MSAsmStmt,
+    NullStmt,
+    DeclStmt,
+    OMPParallelDirective,
+    OMPSimdDirective,
+    OMPForDirective,
+    OMPSectionsDirective,
+    OMPSectionDirective,
+    OMPSingleDirective,
+    OMPParallelForDirective,
+    OMPParallelSectionsDirective,
+    OMPTaskDirective,
+    OMPMasterDirective,
+    OMPCriticalDirective,
+    OMPTaskyieldDirective,
+    OMPBarrierDirective,
+    OMPTaskwaitDirective,
+    OMPFlushDirective,
+    SEHLeaveStmt,
+    OMPOrderedDirective,
+    OMPAtomicDirective,
+    OMPForSimdDirective,
+    OMPParallelForSimdDirective,
+    OMPTargetDirective,
+    OMPTeamsDirective,
+    OMPTaskgroupDirective,
+    OMPCancellationPointDirective,
+    OMPCancelDirective,
+    TranslationUnit,
+    UnexposedAttr,
+    IBActionAttr,
+    IBOutletAttr,
+    IBOutletCollectionAttr,
+    CXXFinalAttr,
+    CXXOverrideAttr,
+    AnnotateAttr,
+    AsmLabelAttr,
+    PackedAttr,
+    PureAttr,
+    ConstAttr,
+    NoDuplicateAttr,
+    CUDAConstantAttr,
+    CUDADeviceAttr,
+    CUDAGlobalAttr,
+    CUDAHostAttr,
+    CUDASharedAttr,
+    PreprocessingDirective,
+    MacroDefinition,
+    MacroExpansion,
+    InclusionDirective,
+    ModuleImportDecl,
+    OverloadCandidate,
+}</pre><h2 class='variants'>Variants</h2>
+<span id='variant.UnexposedDecl' class='variant'><code>UnexposedDecl</code></span><span id='variant.StructDecl' class='variant'><code>StructDecl</code></span><span id='variant.UnionDecl' class='variant'><code>UnionDecl</code></span><span id='variant.ClassDecl' class='variant'><code>ClassDecl</code></span><span id='variant.EnumDecl' class='variant'><code>EnumDecl</code></span><span id='variant.FieldDecl' class='variant'><code>FieldDecl</code></span><span id='variant.EnumConstantDecl' class='variant'><code>EnumConstantDecl</code></span><span id='variant.FunctionDecl' class='variant'><code>FunctionDecl</code></span><span id='variant.VarDecl' class='variant'><code>VarDecl</code></span><span id='variant.ParmDecl' class='variant'><code>ParmDecl</code></span><span id='variant.ObjCInterfaceDecl' class='variant'><code>ObjCInterfaceDecl</code></span><span id='variant.ObjCCategoryDecl' class='variant'><code>ObjCCategoryDecl</code></span><span id='variant.ObjCProtocolDecl' class='variant'><code>ObjCProtocolDecl</code></span><span id='variant.ObjCPropertyDecl' class='variant'><code>ObjCPropertyDecl</code></span><span id='variant.ObjCIvarDecl' class='variant'><code>ObjCIvarDecl</code></span><span id='variant.ObjCInstanceMethodDecl' class='variant'><code>ObjCInstanceMethodDecl</code></span><span id='variant.ObjCClassMethodDecl' class='variant'><code>ObjCClassMethodDecl</code></span><span id='variant.ObjCImplementationDecl' class='variant'><code>ObjCImplementationDecl</code></span><span id='variant.ObjCCategoryImplDecl' class='variant'><code>ObjCCategoryImplDecl</code></span><span id='variant.TypedefDecl' class='variant'><code>TypedefDecl</code></span><span id='variant.CXXMethod' class='variant'><code>CXXMethod</code></span><span id='variant.Namespace' class='variant'><code>Namespace</code></span><span id='variant.LinkageSpec' class='variant'><code>LinkageSpec</code></span><span id='variant.Constructor' class='variant'><code>Constructor</code></span><span id='variant.Destructor' class='variant'><code>Destructor</code></span><span id='variant.ConversionFunction' class='variant'><code>ConversionFunction</code></span><span id='variant.TemplateTypeParameter' class='variant'><code>TemplateTypeParameter</code></span><span id='variant.NonTypeTemplateParameter' class='variant'><code>NonTypeTemplateParameter</code></span><span id='variant.TemplateTemplateParameter' class='variant'><code>TemplateTemplateParameter</code></span><span id='variant.FunctionTemplate' class='variant'><code>FunctionTemplate</code></span><span id='variant.ClassTemplate' class='variant'><code>ClassTemplate</code></span><span id='variant.ClassTemplatePartialSpecialization' class='variant'><code>ClassTemplatePartialSpecialization</code></span><span id='variant.NamespaceAlias' class='variant'><code>NamespaceAlias</code></span><span id='variant.UsingDirective' class='variant'><code>UsingDirective</code></span><span id='variant.UsingDeclaration' class='variant'><code>UsingDeclaration</code></span><span id='variant.TypeAliasDecl' class='variant'><code>TypeAliasDecl</code></span><span id='variant.ObjCSynthesizeDecl' class='variant'><code>ObjCSynthesizeDecl</code></span><span id='variant.ObjCDynamicDecl' class='variant'><code>ObjCDynamicDecl</code></span><span id='variant.CXXAccessSpecifier' class='variant'><code>CXXAccessSpecifier</code></span><span id='variant.ObjCSuperClassRef' class='variant'><code>ObjCSuperClassRef</code></span><span id='variant.ObjCProtocolRef' class='variant'><code>ObjCProtocolRef</code></span><span id='variant.ObjCClassRef' class='variant'><code>ObjCClassRef</code></span><span id='variant.TypeRef' class='variant'><code>TypeRef</code></span><span id='variant.CXXBaseSpecifier' class='variant'><code>CXXBaseSpecifier</code></span><span id='variant.TemplateRef' class='variant'><code>TemplateRef</code></span><span id='variant.NamespaceRef' class='variant'><code>NamespaceRef</code></span><span id='variant.MemberRef' class='variant'><code>MemberRef</code></span><span id='variant.LabelRef' class='variant'><code>LabelRef</code></span><span id='variant.OverloadedDeclRef' class='variant'><code>OverloadedDeclRef</code></span><span id='variant.VariableRef' class='variant'><code>VariableRef</code></span><span id='variant.InvalidFile' class='variant'><code>InvalidFile</code></span><span id='variant.NoDeclFound' class='variant'><code>NoDeclFound</code></span><span id='variant.NotImplemented' class='variant'><code>NotImplemented</code></span><span id='variant.InvalidCode' class='variant'><code>InvalidCode</code></span><span id='variant.UnexposedExpr' class='variant'><code>UnexposedExpr</code></span><span id='variant.DeclRefExpr' class='variant'><code>DeclRefExpr</code></span><span id='variant.MemberRefExpr' class='variant'><code>MemberRefExpr</code></span><span id='variant.CallExpr' class='variant'><code>CallExpr</code></span><span id='variant.ObjCMessageExpr' class='variant'><code>ObjCMessageExpr</code></span><span id='variant.BlockExpr' class='variant'><code>BlockExpr</code></span><span id='variant.IntegerLiteral' class='variant'><code>IntegerLiteral</code></span><span id='variant.FloatingLiteral' class='variant'><code>FloatingLiteral</code></span><span id='variant.ImaginaryLiteral' class='variant'><code>ImaginaryLiteral</code></span><span id='variant.StringLiteral' class='variant'><code>StringLiteral</code></span><span id='variant.CharacterLiteral' class='variant'><code>CharacterLiteral</code></span><span id='variant.ParenExpr' class='variant'><code>ParenExpr</code></span><span id='variant.UnaryOperator' class='variant'><code>UnaryOperator</code></span><span id='variant.ArraySubscriptExpr' class='variant'><code>ArraySubscriptExpr</code></span><span id='variant.BinaryOperator' class='variant'><code>BinaryOperator</code></span><span id='variant.CompoundAssignOperator' class='variant'><code>CompoundAssignOperator</code></span><span id='variant.ConditionalOperator' class='variant'><code>ConditionalOperator</code></span><span id='variant.CStyleCastExpr' class='variant'><code>CStyleCastExpr</code></span><span id='variant.CompoundLiteralExpr' class='variant'><code>CompoundLiteralExpr</code></span><span id='variant.InitListExpr' class='variant'><code>InitListExpr</code></span><span id='variant.AddrLabelExpr' class='variant'><code>AddrLabelExpr</code></span><span id='variant.StmtExpr' class='variant'><code>StmtExpr</code></span><span id='variant.GenericSelectionExpr' class='variant'><code>GenericSelectionExpr</code></span><span id='variant.GNUNullExpr' class='variant'><code>GNUNullExpr</code></span><span id='variant.CXXStaticCastExpr' class='variant'><code>CXXStaticCastExpr</code></span><span id='variant.CXXDynamicCastExpr' class='variant'><code>CXXDynamicCastExpr</code></span><span id='variant.CXXReinterpretCastExpr' class='variant'><code>CXXReinterpretCastExpr</code></span><span id='variant.CXXConstCastExpr' class='variant'><code>CXXConstCastExpr</code></span><span id='variant.CXXFunctionalCastExpr' class='variant'><code>CXXFunctionalCastExpr</code></span><span id='variant.CXXTypeidExpr' class='variant'><code>CXXTypeidExpr</code></span><span id='variant.CXXBoolLiteralExpr' class='variant'><code>CXXBoolLiteralExpr</code></span><span id='variant.CXXNullPtrLiteralExpr' class='variant'><code>CXXNullPtrLiteralExpr</code></span><span id='variant.CXXThisExpr' class='variant'><code>CXXThisExpr</code></span><span id='variant.CXXThrowExpr' class='variant'><code>CXXThrowExpr</code></span><span id='variant.CXXNewExpr' class='variant'><code>CXXNewExpr</code></span><span id='variant.CXXDeleteExpr' class='variant'><code>CXXDeleteExpr</code></span><span id='variant.UnaryExpr' class='variant'><code>UnaryExpr</code></span><span id='variant.ObjCStringLiteral' class='variant'><code>ObjCStringLiteral</code></span><span id='variant.ObjCEncodeExpr' class='variant'><code>ObjCEncodeExpr</code></span><span id='variant.ObjCSelectorExpr' class='variant'><code>ObjCSelectorExpr</code></span><span id='variant.ObjCProtocolExpr' class='variant'><code>ObjCProtocolExpr</code></span><span id='variant.ObjCBridgedCastExpr' class='variant'><code>ObjCBridgedCastExpr</code></span><span id='variant.PackExpansionExpr' class='variant'><code>PackExpansionExpr</code></span><span id='variant.SizeOfPackExpr' class='variant'><code>SizeOfPackExpr</code></span><span id='variant.LambdaExpr' class='variant'><code>LambdaExpr</code></span><span id='variant.ObjCBoolLiteralExpr' class='variant'><code>ObjCBoolLiteralExpr</code></span><span id='variant.ObjCSelfExpr' class='variant'><code>ObjCSelfExpr</code></span><span id='variant.UnexposedStmt' class='variant'><code>UnexposedStmt</code></span><span id='variant.LabelStmt' class='variant'><code>LabelStmt</code></span><span id='variant.CompoundStmt' class='variant'><code>CompoundStmt</code></span><span id='variant.CaseStmt' class='variant'><code>CaseStmt</code></span><span id='variant.DefaultStmt' class='variant'><code>DefaultStmt</code></span><span id='variant.IfStmt' class='variant'><code>IfStmt</code></span><span id='variant.SwitchStmt' class='variant'><code>SwitchStmt</code></span><span id='variant.WhileStmt' class='variant'><code>WhileStmt</code></span><span id='variant.DoStmt' class='variant'><code>DoStmt</code></span><span id='variant.ForStmt' class='variant'><code>ForStmt</code></span><span id='variant.GotoStmt' class='variant'><code>GotoStmt</code></span><span id='variant.IndirectGotoStmt' class='variant'><code>IndirectGotoStmt</code></span><span id='variant.ContinueStmt' class='variant'><code>ContinueStmt</code></span><span id='variant.BreakStmt' class='variant'><code>BreakStmt</code></span><span id='variant.ReturnStmt' class='variant'><code>ReturnStmt</code></span><span id='variant.AsmStmt' class='variant'><code>AsmStmt</code></span><div class='docblock'><p>Duplicate of <code>GccAsmStmt</code>.</p>
+</div><span id='variant.ObjCAtTryStmt' class='variant'><code>ObjCAtTryStmt</code></span><span id='variant.ObjCAtCatchStmt' class='variant'><code>ObjCAtCatchStmt</code></span><span id='variant.ObjCAtFinallyStmt' class='variant'><code>ObjCAtFinallyStmt</code></span><span id='variant.ObjCAtThrowStmt' class='variant'><code>ObjCAtThrowStmt</code></span><span id='variant.ObjCAtSynchronizedStmt' class='variant'><code>ObjCAtSynchronizedStmt</code></span><span id='variant.ObjCAutoreleasePoolStmt' class='variant'><code>ObjCAutoreleasePoolStmt</code></span><span id='variant.ObjCForCollectionStmt' class='variant'><code>ObjCForCollectionStmt</code></span><span id='variant.CXXCatchStmt' class='variant'><code>CXXCatchStmt</code></span><span id='variant.CXXTryStmt' class='variant'><code>CXXTryStmt</code></span><span id='variant.CXXForRangeStmt' class='variant'><code>CXXForRangeStmt</code></span><span id='variant.SEHTryStmt' class='variant'><code>SEHTryStmt</code></span><span id='variant.SEHExceptStmt' class='variant'><code>SEHExceptStmt</code></span><span id='variant.SEHFinallyStmt' class='variant'><code>SEHFinallyStmt</code></span><span id='variant.MSAsmStmt' class='variant'><code>MSAsmStmt</code></span><span id='variant.NullStmt' class='variant'><code>NullStmt</code></span><span id='variant.DeclStmt' class='variant'><code>DeclStmt</code></span><span id='variant.OMPParallelDirective' class='variant'><code>OMPParallelDirective</code></span><span id='variant.OMPSimdDirective' class='variant'><code>OMPSimdDirective</code></span><span id='variant.OMPForDirective' class='variant'><code>OMPForDirective</code></span><span id='variant.OMPSectionsDirective' class='variant'><code>OMPSectionsDirective</code></span><span id='variant.OMPSectionDirective' class='variant'><code>OMPSectionDirective</code></span><span id='variant.OMPSingleDirective' class='variant'><code>OMPSingleDirective</code></span><span id='variant.OMPParallelForDirective' class='variant'><code>OMPParallelForDirective</code></span><span id='variant.OMPParallelSectionsDirective' class='variant'><code>OMPParallelSectionsDirective</code></span><span id='variant.OMPTaskDirective' class='variant'><code>OMPTaskDirective</code></span><span id='variant.OMPMasterDirective' class='variant'><code>OMPMasterDirective</code></span><span id='variant.OMPCriticalDirective' class='variant'><code>OMPCriticalDirective</code></span><span id='variant.OMPTaskyieldDirective' class='variant'><code>OMPTaskyieldDirective</code></span><span id='variant.OMPBarrierDirective' class='variant'><code>OMPBarrierDirective</code></span><span id='variant.OMPTaskwaitDirective' class='variant'><code>OMPTaskwaitDirective</code></span><span id='variant.OMPFlushDirective' class='variant'><code>OMPFlushDirective</code></span><span id='variant.SEHLeaveStmt' class='variant'><code>SEHLeaveStmt</code></span><span id='variant.OMPOrderedDirective' class='variant'><code>OMPOrderedDirective</code></span><span id='variant.OMPAtomicDirective' class='variant'><code>OMPAtomicDirective</code></span><span id='variant.OMPForSimdDirective' class='variant'><code>OMPForSimdDirective</code></span><span id='variant.OMPParallelForSimdDirective' class='variant'><code>OMPParallelForSimdDirective</code></span><span id='variant.OMPTargetDirective' class='variant'><code>OMPTargetDirective</code></span><span id='variant.OMPTeamsDirective' class='variant'><code>OMPTeamsDirective</code></span><span id='variant.OMPTaskgroupDirective' class='variant'><code>OMPTaskgroupDirective</code></span><span id='variant.OMPCancellationPointDirective' class='variant'><code>OMPCancellationPointDirective</code></span><span id='variant.OMPCancelDirective' class='variant'><code>OMPCancelDirective</code></span><span id='variant.TranslationUnit' class='variant'><code>TranslationUnit</code></span><span id='variant.UnexposedAttr' class='variant'><code>UnexposedAttr</code></span><span id='variant.IBActionAttr' class='variant'><code>IBActionAttr</code></span><span id='variant.IBOutletAttr' class='variant'><code>IBOutletAttr</code></span><span id='variant.IBOutletCollectionAttr' class='variant'><code>IBOutletCollectionAttr</code></span><span id='variant.CXXFinalAttr' class='variant'><code>CXXFinalAttr</code></span><span id='variant.CXXOverrideAttr' class='variant'><code>CXXOverrideAttr</code></span><span id='variant.AnnotateAttr' class='variant'><code>AnnotateAttr</code></span><span id='variant.AsmLabelAttr' class='variant'><code>AsmLabelAttr</code></span><span id='variant.PackedAttr' class='variant'><code>PackedAttr</code></span><span id='variant.PureAttr' class='variant'><code>PureAttr</code></span><span id='variant.ConstAttr' class='variant'><code>ConstAttr</code></span><span id='variant.NoDuplicateAttr' class='variant'><code>NoDuplicateAttr</code></span><span id='variant.CUDAConstantAttr' class='variant'><code>CUDAConstantAttr</code></span><span id='variant.CUDADeviceAttr' class='variant'><code>CUDADeviceAttr</code></span><span id='variant.CUDAGlobalAttr' class='variant'><code>CUDAGlobalAttr</code></span><span id='variant.CUDAHostAttr' class='variant'><code>CUDAHostAttr</code></span><span id='variant.CUDASharedAttr' class='variant'><code>CUDASharedAttr</code></span><span id='variant.PreprocessingDirective' class='variant'><code>PreprocessingDirective</code></span><span id='variant.MacroDefinition' class='variant'><code>MacroDefinition</code></span><span id='variant.MacroExpansion' class='variant'><code>MacroExpansion</code></span><div class='docblock'><p>Duplicate of <code>MacroInstantiation</code>.</p>
+</div><span id='variant.InclusionDirective' class='variant'><code>InclusionDirective</code></span><span id='variant.ModuleImportDecl' class='variant'><code>ModuleImportDecl</code></span><span id='variant.OverloadCandidate' class='variant'><code>OverloadCandidate</code></span><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html' title='core::hash::Hash'>Hash</a> for <a class='enum' href='../clang_sys/enum.CXCursorKind.html' title='clang_sys::CXCursorKind'>CXCursorKind</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-439' class='srclink' href='../src/clang_sys/lib.rs.html#155' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.hash' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash' class='fnname'>hash</a>&lt;__H:&nbsp;<a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html' title='core::hash::Hasher'>Hasher</a>&gt;(&amp;self, __arg_0: &amp;mut __H)</code></h4>
+<div class='docblock'><p>Feeds this value into the state given, updating the hasher as necessary.</p>
+</div><h4 id='method.hash_slice' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice' class='fnname'>hash_slice</a>&lt;H&gt;(data: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[Self]</a>, state: &amp;mut H) <span class='where'>where H: <a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html' title='core::hash::Hasher'>Hasher</a></span></code><div class='since' title='Stable since Rust version 1.3.0'>1.3.0</div></h4>
+<div class='docblock'><p>Feeds a slice of this type into the state provided.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.Ord.html' title='core::cmp::Ord'>Ord</a> for <a class='enum' href='../clang_sys/enum.CXCursorKind.html' title='clang_sys::CXCursorKind'>CXCursorKind</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-444' class='srclink' href='../src/clang_sys/lib.rs.html#155' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.cmp' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.Ord.html#tymethod.cmp' class='fnname'>cmp</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../clang_sys/enum.CXCursorKind.html' title='clang_sys::CXCursorKind'>CXCursorKind</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/cmp/enum.Ordering.html' title='core::cmp::Ordering'>Ordering</a></code></h4>
+<div class='docblock'><p>This method returns an <code>Ordering</code> between <code>self</code> and <code>other</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.Ord.html#tymethod.cmp">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html' title='core::cmp::PartialOrd'>PartialOrd</a> for <a class='enum' href='../clang_sys/enum.CXCursorKind.html' title='clang_sys::CXCursorKind'>CXCursorKind</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-450' class='srclink' href='../src/clang_sys/lib.rs.html#155' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.partial_cmp' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#tymethod.partial_cmp' class='fnname'>partial_cmp</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../clang_sys/enum.CXCursorKind.html' title='clang_sys::CXCursorKind'>CXCursorKind</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='https://doc.rust-lang.org/nightly/core/cmp/enum.Ordering.html' title='core::cmp::Ordering'>Ordering</a>&gt;</code></h4>
+<div class='docblock'><p>This method returns an ordering between <code>self</code> and <code>other</code> values if one exists. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#tymethod.partial_cmp">Read more</a></p>
+</div><h4 id='method.lt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.lt' class='fnname'>lt</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>This method tests less than (for <code>self</code> and <code>other</code>) and is used by the <code>&lt;</code> operator. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.lt">Read more</a></p>
+</div><h4 id='method.le' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.le' class='fnname'>le</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>This method tests less than or equal to (for <code>self</code> and <code>other</code>) and is used by the <code>&lt;=</code> operator. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.le">Read more</a></p>
+</div><h4 id='method.gt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.gt' class='fnname'>gt</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>This method tests greater than (for <code>self</code> and <code>other</code>) and is used by the <code>&gt;</code> operator. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.gt">Read more</a></p>
+</div><h4 id='method.ge' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.ge' class='fnname'>ge</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>This method tests greater than or equal to (for <code>self</code> and <code>other</code>) and is used by the <code>&gt;=</code> operator. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.ge">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html' title='core::cmp::Eq'>Eq</a> for <a class='enum' href='../clang_sys/enum.CXCursorKind.html' title='clang_sys::CXCursorKind'>CXCursorKind</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-456' class='srclink' href='../src/clang_sys/lib.rs.html#155' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../clang_sys/enum.CXCursorKind.html' title='clang_sys::CXCursorKind'>CXCursorKind</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-459' class='srclink' href='../src/clang_sys/lib.rs.html#155' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../clang_sys/enum.CXCursorKind.html' title='clang_sys::CXCursorKind'>CXCursorKind</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../clang_sys/enum.CXCursorKind.html' title='clang_sys::CXCursorKind'>CXCursorKind</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-465' class='srclink' href='../src/clang_sys/lib.rs.html#155' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='enum' href='../clang_sys/enum.CXCursorKind.html' title='clang_sys::CXCursorKind'>CXCursorKind</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-651' class='srclink' href='../src/clang_sys/lib.rs.html#155' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='enum' href='../clang_sys/enum.CXCursorKind.html' title='clang_sys::CXCursorKind'>CXCursorKind</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='enum' href='../clang_sys/enum.CXCursorKind.html' title='clang_sys::CXCursorKind'>CXCursorKind</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-654' class='srclink' href='../src/clang_sys/lib.rs.html#155' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "clang_sys";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>
